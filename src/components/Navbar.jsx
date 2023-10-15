@@ -20,7 +20,10 @@ const Navbar = () => {
                 <NavLink to="products">Shop</NavLink>
                 <NavLink to="reference">Reference</NavLink>
                 <NavLink to="care">Care</NavLink>
-                <img src={CartIcon} alt="cart-icon" className="w-6 cursor-pointer" />
+                <div className="relative">
+                    <img src={CartIcon} alt="cart-icon" className="w-8 cursor-pointer" />
+                    <span className="w-5 h-5 rounded-full text-center bg-[linear-gradient(90deg,_#2AF598_0%,_#009EFD_100%)] absolute top-0 -left-2 text-white text-sm">1</span>
+                </div>
             </ul>
 
             <HiMenuAlt3
@@ -51,7 +54,10 @@ const Navbar = () => {
                         <NavLink to="care" mobileMenu>
                             Care
                         </NavLink>
-                        <img src={CartIcon} className="w-7  mx-auto cursor-pointer" alt="cartIcon" />
+                        <div className="relative">
+                            <img src={CartIcon} alt="cart-icon" className="w-8 cursor-pointer" />
+                            <span className="w-5 h-5 rounded-full text-center bg-[linear-gradient(90deg,_#2AF598_0%,_#009EFD_100%)] absolute top-0 -left-2 text-white text-sm">1</span>
+                        </div>
                     </ul>
                 </FadeIn>
 
